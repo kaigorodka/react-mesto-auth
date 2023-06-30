@@ -1,0 +1,13 @@
+.popup__reg-message {
+  font-family: "Inter", "Arial", "Helvetica", "sens-serif";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 23px;
+  margin: 0;
+  text-align: center;
+}

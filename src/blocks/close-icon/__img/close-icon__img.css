@@ -1,0 +1,5 @@
+@media screen and (max-width: 650px) {
+  .close-icon__img {
+    max-width: 22px;
+  }
+}

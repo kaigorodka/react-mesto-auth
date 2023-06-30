@@ -1,0 +1,10 @@
+.element__white-part {
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 15px 31px 21px;
+  max-width: 246px;
+  position: relative;
+}

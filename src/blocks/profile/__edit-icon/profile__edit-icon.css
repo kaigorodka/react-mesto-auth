@@ -1,0 +1,7 @@
+.profile__edit-icon {
+  position: absolute;
+  right: 47px;
+  top: 47px;
+  display: none;
+  z-index: 5;
+}

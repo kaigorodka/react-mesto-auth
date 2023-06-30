@@ -1,0 +1,14 @@
+.trash-button {
+  top: 18px;
+  right: 15px;
+  position: absolute;
+  max-width: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.trash-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

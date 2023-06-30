@@ -1,0 +1,22 @@
+.close-icon {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  max-width: 32px;
+}
+.close-icon:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+@media screen and (max-width: 650px) {
+  .close-icon {
+    top: -35px;
+    right: 0px;
+    max-width: 22px;
+  }
+}

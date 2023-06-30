@@ -1,0 +1,15 @@
+.edit-button {
+  background-color: black;
+  border: none;
+  padding: 0 0 5px 0;
+}
+.edit-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+@media screen and (max-width: 502px) {
+  .edit-button {
+    padding: 0;
+    max-width: 18px;
+  }
+}

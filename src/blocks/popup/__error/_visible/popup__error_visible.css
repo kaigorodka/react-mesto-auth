@@ -1,0 +1,8 @@
+.popup__error_visible {
+  font-family: "Inter", "Arial", "Helvetica", "sens-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ff0000;
+  visibility: visible;
+}

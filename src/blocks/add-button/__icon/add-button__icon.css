@@ -1,0 +1,9 @@
+.add-button__icon {
+  padding: 14px 0 14px 0;
+  width: 22px;
+}
+@media screen and (max-width: 500px) {
+  .add-button__icon {
+    width: 16px;
+  }
+}

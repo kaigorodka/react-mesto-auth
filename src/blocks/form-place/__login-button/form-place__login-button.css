@@ -1,0 +1,9 @@
+.form-place__login-button {
+  border: none;
+  background-color: black;
+  color: #fff;
+}
+.form-place__login-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

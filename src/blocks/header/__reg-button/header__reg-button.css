@@ -1,0 +1,16 @@
+.header__reg-button {
+  border: 0;
+  background-color: black;
+  font-family: "Inter", "Arial", "Helvetica", "sens-serif";
+  font-style: normal;
+  line-height: 22px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: 46px;
+}
+.header__reg-button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}

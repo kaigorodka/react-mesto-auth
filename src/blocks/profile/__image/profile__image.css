@@ -1,0 +1,8 @@
+.profile__image {
+  max-width: 120px;
+  border-radius: 50%;
+  margin: 0px 0px 0px 0px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  z-index: 10;
+}

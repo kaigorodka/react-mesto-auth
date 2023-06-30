@@ -1,0 +1,7 @@
+.popup__reg-picture {
+  max-width: 120px;
+  max-height: 120px;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 60px;
+}
