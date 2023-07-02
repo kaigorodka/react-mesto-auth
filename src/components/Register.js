@@ -10,7 +10,6 @@ function Register(props) {
     password: "",
     email: "",
   });
-  debugger;
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -26,11 +25,11 @@ function Register(props) {
     const { password, email } = formValue;
     auth
       .register({ password, email })
+      .then(props.onSucces)
       .then((res) => {
         navigate("/sign-in", { replace: true });
       })
-      .catch(props.onErr)
-      .finally(props.onSucces);
+      .catch(props.onErr);
   };
   return (
     <>
@@ -74,7 +73,7 @@ function Register(props) {
           </button>
           <p className="form-place__paragraph">
             Уже зарегистрированы?
-            <Link to="/sign-up">
+            <Link to="/sign-in">
               <button className="form-place__login-button">Войти</button>
             </Link>
           </p>

@@ -1,3 +1,4 @@
+import checkResponse from "../utils/checkResponse";
 export const BASE_URL = "https://auth.nomoreparties.co";
 export const register = ({ password, email }) => {
   return fetch(`${BASE_URL}/signup`, {
@@ -10,19 +11,10 @@ export const register = ({ password, email }) => {
       email,
     }),
   })
-    .then((response) => {
-      try {
-        if (response.ok === true) {
-          return response.json();
-        }
-      } catch (e) {
-        return e;
-      }
-    })
+    .then(checkResponse)
     .then((res) => {
       return res;
-    })
-    .catch((err) => console.log(err));
+    });
 };
 
 export const tokenGetter = (token) => {
@@ -33,13 +25,11 @@ export const tokenGetter = (token) => {
       authorization: `Bearer ${token}`,
     },
   })
-    .then((res) => res.json())
-    .then((data) => data)
-    .catch((err) => console.log(err));
+    .then(checkResponse)
+    .then((data) => data);
 };
 
 export const authorize = (password, email) => {
-  debugger;
   return fetch(`${BASE_URL}/signin`, {
     method: "POST",
     headers: {
@@ -47,12 +37,11 @@ export const authorize = (password, email) => {
     },
     body: JSON.stringify({ password, email }),
   })
-    .then((response) => response.json())
+    .then(checkResponse)
     .then((data) => {
       if (data.token) {
         localStorage.setItem("token", data.token);
         return data;
       }
-    })
-    .catch((err) => console.log(err));
+    });
 };

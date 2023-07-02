@@ -58,17 +58,22 @@ function App() {
   function tokenCheck() {
     if (localStorage.getItem("token")) {
       const token = localStorage.getItem("token");
-      auth.tokenGetter(token).then((res) => {
-        if (res) {
-          // авторизуем пользователя
-          const userData = {
-            email: res.data.email,
-          };
-          setUserData(userData);
-          setLoggedIn(true);
-          navigate("/", { replace: true });
-        }
-      });
+      auth
+        .tokenGetter(token)
+        .then((res) => {
+          if (res) {
+            // авторизуем пользователя
+            const userData = {
+              email: res.data.email,
+            };
+            setUserData(userData);
+            setLoggedIn(true);
+            navigate("/", { replace: true });
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     }
   }
   // закрытие попапов
